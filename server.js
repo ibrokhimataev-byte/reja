@@ -1,5 +1,6 @@
 console.log("web serverni boshlash");
 const express = require("express");
+const res = require("express/lib/response");
 const app = express();
 const http = require("http");
 
@@ -24,14 +25,17 @@ app.set("view engine", "ejs"); // htnml frontendni yasaymiz backandni ichida
 
 
 // 4 Routing code
+app.post("/create-item", function(req, res) {
+    console.log(req.body);
+    res.json( {test: "success"} );
+});
+
+
+
 app.get("/", function(req, res){
-    res.end("<h1>HELLO WORLD</h1>");
-
+    res.render("harid");
 });
-app.get("/gift", function(req, res){
-    res.end(`<h1>Siz sovgalar bolimidasiz</h1>`);
 
-});
 
 
 
