@@ -3,7 +3,16 @@ const express = require("express");
 const res = require("express/lib/response");
 const app = express();
 const http = require("http");
+const fs = require("fs");
 
+let user;
+fs.readFile("database/users.json", "utf-8",(err, data)=>{
+    if(err){
+        console.log("Error", err);
+    }   else{
+        user = JSON.parse(data);
+}       
+});
 
 // 1 - Krish code: Bosqichda expressga krib kelayotgan malunotlarga bogliq bolgan kodlarmz nomi.
 
@@ -30,7 +39,9 @@ app.post("/create-item", function(req, res) {
     res.json( {test: "success"} );
 });
 
-
+app.get("/author", (req, res) => {
+    res.render("author", {user: user} );
+});
 
 app.get("/", function(req, res){
     res.render("harid");

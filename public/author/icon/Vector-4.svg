@@ -1,0 +1,27 @@
+<svg viewBox="0 0 24.9863 21.6084" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.986328" height="21.608398" fill="none" customFrame="#000000">
+	<defs>
+		<clipPath id="clipPath_113">
+			<rect width="14.575342" height="12.604972" x="5.205078" y="4.502441" fill="rgb(255,255,255)" />
+		</clipPath>
+		<clipPath id="clipPath_114">
+			<rect width="14.575342" height="12.604972" x="5.205078" y="4.502441" fill="rgb(255,255,255)" />
+		</clipPath>
+		<clipPath id="clipPath_115">
+			<rect width="14.575342" height="12.604972" x="5.205078" y="4.502441" fill="rgb(255,255,255)" />
+		</clipPath>
+	</defs>
+	<g id="Youtube">
+		<ellipse id="Ellipse 9" rx="12.493151" ry="10.804261" cx="12.4931507" cy="10.8047495" fill="rgb(255,180,0)" />
+		<g id="Icons-Youtube" customFrame="url(#clipPath_113)">
+			<rect id="Icons-Youtube" width="14.575342" height="12.604972" x="5.205078" y="4.502441" fill="rgb(255,255,255)" fill-opacity="0" />
+			<g id="Icons-Youtube" customFrame="url(#clipPath_114)">
+				<rect id="Icons-Youtube" width="14.575342" height="12.604972" x="5.205078" y="4.502441" fill="rgb(255,255,255)" fill-opacity="0" />
+				<g id="Icons-Youtube" clip-path="url(#clipPath_115)" customFrame="url(#clipPath_115)">
+					<rect id="Icons-Youtube" width="14.575342" height="12.604972" x="5.205078" y="4.502441" fill="rgb(255,255,255)" fill-opacity="0" />
+					<path id="Vector" d="M5.20508 4.50244L19.7804 4.50244L19.7804 17.1074L5.20508 17.1074L5.20508 4.50244Z" fill-rule="nonzero" />
+					<path id="Vector" d="M18.2885 7.915C18.566 8.85091 18.566 10.8047 18.566 10.8047C18.566 10.8047 18.566 12.7585 18.2885 13.6944C18.1342 14.2117 17.683 14.6187 17.1115 14.7563C16.0737 15.0063 12.493 15.0063 12.493 15.0063C12.493 15.0063 8.91413 15.0063 7.87442 14.7563C7.30052 14.6166 6.84989 14.2101 6.69746 13.6944C6.41992 12.7585 6.41992 10.8047 6.41992 10.8047C6.41992 10.8047 6.41992 8.85091 6.69746 7.915C6.85172 7.39767 7.30294 6.99063 7.87442 6.85303C8.91413 6.60303 12.493 6.60303 12.493 6.60303C12.493 6.60303 16.0737 6.60303 17.1115 6.85303C17.6854 6.99273 18.1361 7.39924 18.2885 7.915ZM11.2784 12.6429L14.9222 10.8047L11.2784 8.96646L11.2784 12.6429Z" fill="rgb(43,43,43)" fill-rule="nonzero" />
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

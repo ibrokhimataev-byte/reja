@@ -1,0 +1,381 @@
+.frame {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #e5e5e5;
+}
+
+
+.main_frame {
+    position: relative;
+    width: 1440px;
+    height: 1316.27px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2px;
+    background: #E5E5E5;
+}
+
+
+/* .main_frame .left_frame {
+    position: relative;
+    width: 305px;
+    height: 1315px;
+    background: red;
+    display: flex;
+    flex-direction: column;
+} */
+
+ .main_frame .midd_frame {
+    position: relative;
+    width: 970px;
+    height: 1315px;
+    margin-left: 30px;
+    margin-right: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.main_frame .right_frame {
+    position: relative;
+    width: 108px;
+    height: 1315px;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+}
+
+
+/* Umumiy Frame o'lchami */
+.left_frame {
+    width: 305px;
+    min-height: 1315px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 25px;  /* Ichki bo'shliq */
+    box-sizing: border-box;
+}
+
+/* 1-bo'lim CSS */
+.left_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.left_1_2 { font-size: 18px; font-weight: 500; margin-top: 15px; color: #2B2B2B; }
+.left_1_3 { font-size: 15px; color: #767676; margin-bottom: 15px; }
+
+.left-icons { display: flex; gap: 10px; justify-content: center; }
+.icon {
+    width: 24px; height: 24px;
+    background-color: #FFB400;
+    border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
+}
+.icon-1 { width: 12px; }
+
+/* Chiziq */
+.marginer {
+    width: 100%;
+    height: 1.5px;
+    background-color: #F0F0F6;
+    margin: 20px 0;
+}
+
+/* 2-bo'lim CSS */
+.left_2 { display: flex; flex-direction: column; gap: 10px; }
+.info-row { display: flex; justify-content: space-between; align-items: center; }
+.info-label { background-color: #FFB400; padding: 2px 5px; font-size: 15px; }
+.info-value { font-size: 15px; }
+.green-text { color: #7EB942; }
+
+/* 3 & 4-bo'lim CSS (Progress bar) */
+.section-title { font-size: 18px; font-weight: 500; margin-bottom: 10px; }
+.lang-item, .skill-item { margin-bottom: 15px; }
+.lang-info, .skill-info { display: flex; justify-content: space-between; font-size: 15px; color: #767676; }
+.progress-bar {
+    width: 100%; height: 4px;
+    background: #FFFFFF;
+    border: 1px solid #FFB400;
+    border-radius: 2px;
+    padding: 1px;
+    margin-top: 5px;
+}
+.progress { height: 2px; background-color: #FFB400; border-radius: 2px; }
+
+/* 5-bo'lim CSS */
+.left_5 { display: flex; flex-direction: column; gap: 10px; }
+.extra-skill-item { display: flex; align-items: center; gap: 15px; }
+.check-icon { width: 15px; height: 15px; object-fit: contain; }
+.extra-skill-item span { font-size: 15px; color: #767676; }
+
+
+
+/* Midd Frame CSS */
+
+.hero_banner {
+    position: relative;
+    width: 971px;
+    height: 467px;
+    background-color: #FFFFFF;
+   
+    display: flex; /* Matn va rasm yonma-yon joylashishi uchun flex ishlatamiz */
+    flex-direction: row; /* Yonma-yon joylashish */
+    justify-content: space-between; /* Matn va rasm orasida bo'shliq */
+    align-items: center;    /* Vertikal o'rtalash */
+    padding: 0 0 0 60px; /* Rasm chetga taqalishi uchun o'ngdan padding 0 */
+    overflow: hidden;   /*Rasm va shakllar chiqib ketmasligi uchun*/
+    box-sizing: border-box;
+    margin-top: 0px; /* Tepadan bo'sh joy */
+    margin: 0px auto;
+}
+
+/* Matn qismi sig'ishi uchun */
+.hero_content {
+    flex: 0 0 500px; /* Matnga aniq kenglik beramiz */
+    z-index: 1;
+}
+
+.hero_content h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #2B2B2B;
+}
+
+.hero_content p {
+    font-size: 15px;
+    color: #767676;
+    line-height: 1.6;
+    max-width: 420px; /* Matn rasmga o'tib ketmasligi uchun */
+}
+
+/* Rasm qismi dizayndagidek sig'dirish */
+.hero_image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Rasmni eng o'ngga surish */
+    align-self: flex-end; /* Rasmni banner tubiga taqash */
+    height: 95%; /* Bannerdan biroz kichikroq yoki 100% qiling */
+}
+
+.hero_image img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* Shakllar joylashuvi (Figma bo'yicha) */
+.shape { position: absolute; z-index: 2; }
+
+.ellipse-1 { top: 30px; left: 30px; width: 14px; }
+.ellipse-2 { top: 50px; left: 55%; width: 16px; opacity: 0.6; }
+.rect-top { top: 80px; right: 80px; width: 15px; }
+.ellipse-3 { bottom: 40px; left: 100px; width: 12px; }
+.rect-mid { bottom: 60px; left: 48%; width: 16px; }
+
+/* Polygon - o'ng pastki burchakda */
+.polygon-bottom {
+    bottom: 25px;
+    right: 25px;
+    width: 16px;
+    z-index: 11; /* Rasm ustida ko'rinishi uchun */
+}
+
+/* Tugma */
+.hire_me_btn {
+    margin-top: 30px;
+    padding: 1.5px 7px;
+    background-color: #FFB400;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*services section*/
+
+/* Services Sarlavhasi */
+.services_section {
+    width: 970px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.services_header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2B2B2B;
+    margin-bottom: 15px;
+}
+
+.services_header p {
+    font-size: 15px;
+    color: #767676;
+    max-width: 600px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+}
+
+/* GRID SISTEMASI - 3 ta ustun */
+.services_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 ta teng ustun */
+    gap: 20px; /* Kartalar orasidagi masofa */
+    width: 100%;
+}
+
+/* Umumiy Karta Stili */
+.service_card {
+    background: #FFFFFF;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s;
+    min-height: 225px;
+    box-sizing: border-box;
+}
+
+.service_card:hover {
+    transform: translateY(-5px); /* Sichqoncha kelganda biroz ko'tariladi */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.service_card img {
+    width: 68px;
+    height: 68px;
+    margin-bottom: 20px;
+}
+
+.service_card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2B2B2B;
+    margin-bottom: 15px;
+}
+
+.service_card p {
+    font-size: 15px;
+    color: #767676;
+    line-height: 1.4;
+}
+
+/* Advertising Karta (Dizayndagi farqli karta) */
+.advertising_card {
+    justify-content: center;
+}
+
+.advertising_card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.order_now {
+    color: #FFB400;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+/*raight frame*/
+
+/* .right_frame {
+    width: 108px;
+    height: 1315px; 
+    background-color: #F0F0F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    position: sticky; 
+    top: 0;
+    right: 0;
+    z-index: 100;
+} */
+
+/* Tungi rejim tugmasi */
+.theme_toggle {
+    margin-bottom: 150px; /* Ikonkalardan masofa */
+    cursor: pointer;
+}
+
+.theme_toggle img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Navigatsiya menyusi */
+.side_nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Ikonkalar orasidagi masofa */
+}
+
+.nav_item {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #F0F0F6; /* Odatiy fon */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+/* Aktiv yoki sichqoncha ustiga kelgandagi holat */
+.nav_item:hover, .nav_item.active {
+    background-color: #FFB400; /* Sariq fon */
+}
+
+.nav_item img {
+    width: 18px;
+    height: 18px;
+}
+
+/* Tooltip (ikonka ustiga borganda chiqadigan yozuv) */
+.tooltip {
+    position: absolute;
+    right: 55px;
+    background-color: #2B2B2B;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.nav_item:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+
