@@ -119,4 +119,4 @@ function countLetter(letter, word) {
 
 // Misol
 let answer = countLetter("a", "javascript");
-console.log("Javob:", answer); 
+console.log("Javob:", answer);  
