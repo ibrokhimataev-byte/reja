@@ -1,42 +1,52 @@
 console.log("Train AREA!");
-console.log("Jack Ma maslaxatlari");
-const list = [
-    "yaxshi talaba boling", // 0-20
-    "togri boshliq tanlang va koproq xato qling", // 20-30
-    "uzingizga ishlashingizni boshlang", // 30-40
-    "siz kuchli bolgan narsalarni qiling", // 40-50
-    "yoshlarga investitsiya qiling", // 50-60
-    "endi dam oling", // 60
-];
+
+
+// B Task
+
+function countDigits(str) {
+  const digits = str.match(/\d/g);    
+  return digits ? digits.length : 0;
+}
+
+
+// console.log("Jack Ma maslaxatlari");
+// const list = [
+//     "yaxshi talaba boling", // 0-20
+//     "togri boshliq tanlang va koproq xato qling", // 20-30
+//     "uzingizga ishlashingizni boshlang", // 30-40
+//     "siz kuchli bolgan narsalarni qiling", // 40-50
+//     "yoshlarga investitsiya qiling", // 50-60
+//     "endi dam oling", // 60
+// ];
 
 
 //CALLBACK function example =>
 
-  function maslaxatatBering(a, callback) {
-    if (typeof a !== "number")  callback ("insert a number", null);
-    else if (a <=20) callback(null, list[0]);
-    else if (20 < a && a <=30) callback(null, list[1]);
-    else if (30 < a && a <=40) callback(null, list[2]);
-    else if (40 < a && a <=50) callback(null, list[3]);
-    else if (50 < a && a <=60) callback(null, list[4]);
-    else { 
+//   function maslaxatatBering(a, callback) {
+//     if (typeof a !== "number")  callback ("insert a number", null);
+//     else if (a <=20) callback(null, list[0]);
+//     else if (20 < a && a <=30) callback(null, list[1]);
+//     else if (30 < a && a <=40) callback(null, list[2]);
+//     else if (40 < a && a <=50) callback(null, list[3]);
+//     else if (50 < a && a <=60) callback(null, list[4]);
+//     else { 
       
-                setInterval(function() {
-                callback(null, list[1]);  
-            }, 5000);
-        };
-}
+//                 setInterval(function() {
+//                 callback(null, list[1]);  
+//             }, 5000);
+//         };
+// }
 
 
-console.log("passed here 0");
-maslaxatatBering(65, (err, data) => {
-    if (err) 
-        console.log("Error:", err);
-    else {
-        console.log("Javob", data);
-    }
-    });
-console.log("passed here 1");
+// console.log("passed here 0");
+// maslaxatatBering(65, (err, data) => {
+//     if (err) 
+//         console.log("Error:", err);
+//     else {
+//         console.log("Javob", data);
+//     }
+//     });
+// console.log("passed here 1");
 
 
 
