@@ -1,6 +1,5 @@
 console.log("web serverni boshlash");
 const express = require("express");
-const res = require("express/lib/response");
 const app = express();
 
 // const fs = require("fs");
@@ -18,6 +17,7 @@ const app = express();
 
 // MongoDB chaqirish
 const db = require("./server").db();
+const mongodb = require("mongodb");
 
 
 // 1 - Krish code: Bosqichda expressga krib kelayotgan malunotlarga bogliq bolgan kodlarmz nomi.
@@ -44,17 +44,32 @@ app.post("/create-item", (req, res) => {
     console.log("user entered /create-item");
     const new_reja = req.body.reja;
     db.collection("plans").insertOne({reja : new_reja}, (err, data) => {
-        if(err) {
-            console.log(err);
-            res.end("somenthing went wrong")
-        } else {
-            res.end("successfully added")
-        }
-    })
+       console.log(data.ops)
+        res.json(data.ops[0])
+    });
 });
+        
+        // if(err) {
+        //     console.log(err);
+        //     res.end("somenthing went wrong")
+        // } else {
+        //     res.end("successfully added")
+        // }
+
+
 // app.get('/author', (req, res) => {
 //     res.render("author",  { user: user });
 // })
+
+app.post("/delete-item", (req, res) => {
+  const id = req.body.id;
+  console.log(id);
+  db.collection("plans").deleteOne({_id: new mongodb.ObjectId(id)}, function(err, data) {
+    res.json({state: "success" });
+  })
+  
+});
+
 app.get("/", function (req ,res) { 
     console.log("user entered /")
     db.collection("plans")

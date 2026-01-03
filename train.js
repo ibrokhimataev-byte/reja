@@ -1,12 +1,89 @@
 console.log("Train AREA!");
 
+// MITTASK
+
+//MITASK-C 
+
+// Shunday class tuzing tuzing nomi Shop, 
+// va uni constructoriga 3 hil mahsulot pass bolsin, hamda classning 
+// 3ta methodi bolsin, biri qoldiq, biri sotish va biri qabul. 
+// Har bir method ishga tushgan vaqt ham log qilinsin.
+// MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() 
+// return hozir 20:40da 4ta non, 5ta lagmon va 2ta cola mavjud! 
+// shop.sotish('non', 3) & shop.qabul('cola', 4) & shop.qoldiq() r
+// return hozir 20:50da 1ta non, 5ta lagmon va 6ta cola mavjud!
+
+// Masalaning yechimi:
+
+// 1. Momentni chaqiramiz
+const moment = require('moment');
+
+class Shop {
+  constructor(non, tuz, choy) {
+    this.non = non;
+    this.tuz = tuz;
+    this.choy = choy;
+  }
+
+  // Vaqtni olish uchun yordamchi metod
+  _getTime() {
+    return moment().format('HH:mm');
+  }
+
+  qoldiq() {
+    const time = this._getTime();
+    console.log(`Hozir ${time}da ${this.non}ta non, ${this.tuz}ta tuz va ${this.choy}ta choy mavjud!`);
+  }
+
+  sotish(mahsulot, miqdor) {
+    const time = this._getTime();
+    if (this[mahsulot] >= miqdor) {
+      this[mahsulot] -= miqdor;
+      console.log(`${time}da ${miqdor}ta ${mahsulot} sotildi.`);
+    } else {
+      console.log(`${time}da xatolik: Omborxonada yetarli ${mahsulot} yo'q!`);
+    }
+  }
+
+  qabul(mahsulot, miqdor) {
+    const time = this._getTime();
+    this[mahsulot] += miqdor;
+    console.log(`${time}da ${miqdor}ta ${mahsulot} qabul qilindi.`);
+  }
+}
+
+// --- ISHLATISH ---
+const shop = new Shop(4, 5, 2);
+
+shop.qoldiq();           // Boshlang'ich qoldiq
+shop.sotish('non', 3);   // 3ta non sotildi
+shop.qabul('choy', 4);   // 4ta choy olindi
+shop.qoldiq();           // Yakuniy qoldiqni ko'rish
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // B Task
 
-function countDigits(str) {
-  const digits = str.match(/\d/g);    
-  return digits ? digits.length : 0;
-}
+// function countDigits(str) {
+//   const digits = str.match(/\d/g);    
+//   return digits ? digits.length : 0;
+// }
 
 
 // console.log("Jack Ma maslaxatlari");
@@ -115,18 +192,18 @@ function countDigits(str) {
 
 // 2-parametr: so‘z (string)
 
-function countLetter(letter, word) {
-  let result = 0;
+// function countLetter(letter, word) {
+//   let result = 0;
 
-  for (let i = 0; i < word.length; i++) {
-    if (word[i] == letter) {
-      result++;
-    }
-  }
+//   for (let i = 0; i < word.length; i++) {
+//     if (word[i] == letter) {
+//       result++;
+//     }
+//   }
 
-  return result;
-}
+//   return result;
+// }
 
-// Misol
-let answer = countLetter("a", "javascript");
-console.log("Javob:", answer);  
+// // Misol
+// let answer = countLetter("a", "javascript");
+// console.log("Javob:", answer);  

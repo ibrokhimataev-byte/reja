@@ -34,7 +34,7 @@
              </div>
           </form>
         </div>
-        <ul id="item-list" class="list-group">
+        <ol id="item-list" class="list-group">
             <% items.map(function(item) { %>
                  <li
                 class="list-group-item list-group-item-info d-flex align-items-center justify-content-between"
@@ -52,14 +52,15 @@
                 </div>
             </li>
             <% }) %>
-           </ul>
+          </ol>
         
         
         <button id="clean-all" class="btn btn-danger" style="border-radius: 20px;">
           Hamma Rejalarni O'chirish
         </button>
         
-    
-      </div>            
+      </div> 
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="/browser.js"></script>           
     </body>
 </html>
