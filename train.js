@@ -2,6 +2,29 @@ console.log("Train AREA!");
 
 // MITTASK
 
+// MITTASK D:
+/* Shunday function tuzing, u 2ta string
+parametrga ega bolsin, hamda agar har ikkala
+string bir xil harflardan iborat bolsa true aks holda false qaytarsin */
+
+function harfTekshir(mitTask, mitVazifa) {
+  if (mitTask.length !== mitVazifa.length) {
+    return false;
+  }
+  let s1 = mitTask.split('').sort().join('');
+  let s2 = mitVazifa.split('').sort().join('');
+  return s1 === s2;
+ 
+}
+
+console.log(harfTekshir("mitTask", "mitVazifa"));
+ 
+
+
+
+
+
+
 //MITASK-C 
 
 // Shunday class tuzing tuzing nomi Shop, 
@@ -16,49 +39,49 @@ console.log("Train AREA!");
 // Masalaning yechimi:
 
 // 1. Momentni chaqiramiz
-const moment = require('moment');
+// const moment = require('moment');
 
-class Shop {
-  constructor(non, tuz, choy) {
-    this.non = non;
-    this.tuz = tuz;
-    this.choy = choy;
-  }
+// class Shop {
+//   constructor(non, tuz, choy) {
+//     this.non = non;
+//     this.tuz = tuz;
+//     this.choy = choy;
+//   }
 
   // Vaqtni olish uchun yordamchi metod
-  _getTime() {
-    return moment().format('HH:mm');
-  }
+//   _getTime() {
+//     return moment().format('HH:mm');
+//   }
 
-  qoldiq() {
-    const time = this._getTime();
-    console.log(`Hozir ${time}da ${this.non}ta non, ${this.tuz}ta tuz va ${this.choy}ta choy mavjud!`);
-  }
+//   qoldiq() {
+//     const time = this._getTime();
+//     console.log(`Hozir ${time}da ${this.non}ta non, ${this.tuz}ta tuz va ${this.choy}ta choy mavjud!`);
+//   }
 
-  sotish(mahsulot, miqdor) {
-    const time = this._getTime();
-    if (this[mahsulot] >= miqdor) {
-      this[mahsulot] -= miqdor;
-      console.log(`${time}da ${miqdor}ta ${mahsulot} sotildi.`);
-    } else {
-      console.log(`${time}da xatolik: Omborxonada yetarli ${mahsulot} yo'q!`);
-    }
-  }
+//   sotish(mahsulot, miqdor) {
+//     const time = this._getTime();
+//     if (this[mahsulot] >= miqdor) {
+//       this[mahsulot] -= miqdor;
+//       console.log(`${time}da ${miqdor}ta ${mahsulot} sotildi.`);
+//     } else {
+//       console.log(`${time}da xatolik: Omborxonada yetarli ${mahsulot} yo'q!`);
+//     }
+//   }
 
-  qabul(mahsulot, miqdor) {
-    const time = this._getTime();
-    this[mahsulot] += miqdor;
-    console.log(`${time}da ${miqdor}ta ${mahsulot} qabul qilindi.`);
-  }
-}
+//   qabul(mahsulot, miqdor) {
+//     const time = this._getTime();
+//     this[mahsulot] += miqdor;
+//     console.log(`${time}da ${miqdor}ta ${mahsulot} qabul qilindi.`);
+//   }
+// }
 
 // --- ISHLATISH ---
-const shop = new Shop(10, 10, 10);
+// const shop = new Shop(10, 10, 10);
 
-shop.qoldiq();           // Boshlang'ich qoldiq
-shop.sotish('non', 10);   // 3ta non sotildi
-shop.qabul('choy', 4);   // 4ta choy olindi
-shop.qoldiq();           // Yakuniy qoldiqni ko'rish
+// shop.qoldiq();           // Boshlang'ich qoldiq
+// shop.sotish('non', 10);   // 3ta non sotildi
+// shop.qabul('non', 15);   // 4ta choy olindi
+// shop.qoldiq();           // Yakuniy qoldiqni ko'rish
 
 
 
