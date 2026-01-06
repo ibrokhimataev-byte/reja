@@ -53,10 +53,10 @@ class Shop {
 }
 
 // --- ISHLATISH ---
-const shop = new Shop(4, 5, 2);
+const shop = new Shop(10, 10, 10);
 
 shop.qoldiq();           // Boshlang'ich qoldiq
-shop.sotish('non', 3);   // 3ta non sotildi
+shop.sotish('non', 10);   // 3ta non sotildi
 shop.qabul('choy', 4);   // 4ta choy olindi
 shop.qoldiq();           // Yakuniy qoldiqni ko'rish
 
