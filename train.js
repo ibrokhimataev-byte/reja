@@ -2,22 +2,49 @@ console.log("Train AREA!");
 
 // MITTASK
 
+
+// TASK E: 
+
+// Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+// MASALAN: getReverse("hello") return qilsin "olleh"
+
+function teskariQlish(futbol = 'futbol') {
+   const task = futbol.split('').reverse().join('');
+  return task;
+  
+};
+
+const result = teskariQlish();
+console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
 // MITTASK D:
 /* Shunday function tuzing, u 2ta string
 parametrga ega bolsin, hamda agar har ikkala
 string bir xil harflardan iborat bolsa true aks holda false qaytarsin */
 
-function harfTekshir(mitTask, mitVazifa) {
-  if (mitTask.length !== mitVazifa.length) {
-    return false;
-  }
-  let s1 = mitTask.split('').sort().join('');
-  let s2 = mitVazifa.split('').sort().join('');
-  return s1 === s2;
+// function harfTekshir(mitTask, mitVazifa) {
+//   if (mitTask.length !== mitVazifa.length) {
+//     return false;
+//   }
+//   let s1 = mitTask.split('').sort().join('');
+//   let s2 = mitVazifa.split('').sort().join('');
+//   return s1 === s2;
  
-}
+// }
 
-console.log(harfTekshir("mitTask", "mitVazifa"));
+// console.log(harfTekshir("mitTask", "mitVazifa"));
  
 
 

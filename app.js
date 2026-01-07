@@ -62,9 +62,12 @@ app.post("/create-item", (req, res) => {
 // })
 
 app.post("/delete-item", (req, res) => {
-  const id = req.body.id;
-  
+    console.log("STEP2: FR > BS");
+    const id = req.body.id;
+    console.log("STEP3: BS > DB");
   db.collection("plans").deleteOne({_id: new mongodb.ObjectId(id)}, function(err, data) {
+    console.log("STEP4: DB > BS");
+    console.log("STEP5: BS > FR");
     res.json({state: "success" });
   })
   

@@ -48,13 +48,16 @@ document
 
 
 document.addEventListener("click", function (e) {
-    console.log(e)
+    // console.log(e)
     //delete operation
-    console.log(e.target)
+    // console.log(e.target)
     if(e.target.classList.contains("delete-me")) {
+        console.log("STEP 1")
         if(confirm("Aniq o'chirmoqchimisiz?")){
-            axios.post("/delete-item", {id: e.target.getAttribute("data-id")})
+            axios.
+            post("/delete-item", {id: e.target.getAttribute("data-id")})
             .then((response) => {
+                console.log("STEP6: BS > FR"); // frontendga krib keldi
                 console.log(response.data);
                 e.target.parentElement.parentElement.remove();
             })
