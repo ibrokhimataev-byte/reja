@@ -2,20 +2,60 @@ console.log("Train AREA!");
 
 // MITTASK
 
+//MITTASK F:
+// Yagona string argumentga ega findDoublers nomli function tuzing
+// Agar stringda bittadan ortiq bir xil harflar ishtirok etgan bo'lsa
+// true yokida false natija qaytarsin.
+
+// MASALAN: findDoublers("variable"); natija true qaytadi. Sababi ikki marotaba takrorlangan 'll' harfi mavjud!
+
+function findDoublers(variable) {
+  for (let i = 0; i < variable.length; i++) {
+    for (let j = i + 1; j < variable.length; j++) {
+      if (variable[i] === variable[j]) {
+        return true; // bir xil harf topilsa
+      }
+    }
+  }
+  return false; // takror yo‘q bolsa
+}
+
+findDoublers("variable"); // true
+findDoublers("hello");    // true
+findDoublers("world");    // false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // TASK E: 
 
 // Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
 // MASALAN: getReverse("hello") return qilsin "olleh"
 
-function teskariQlish(futbol = 'futbol') {
-   const task = futbol.split('').reverse().join('');
-  return task;
+// function teskariQlish(futbol = 'futbol') {
+//    const task = futbol.split('').reverse().join('');
+//   return task;
   
-};
+// };
 
-const result = teskariQlish();
-console.log(result);
+// const result = teskariQlish();
+// console.log(result);
 
 
 
